@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Welcome</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav class="text-white shadow-lg fixed w-full top-0 z-50" style="background-color: #052F35;">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">
+                    <i class="fas fa-rocket mr-2"></i>BrandName
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:opacity-80 transition">Home</a>
+                    <a href="#features" class="hover:opacity-80 transition">Features</a>
+                    <a href="#about" class="hover:opacity-80 transition">About</a>
+                    <a href="#contact" class="hover:opacity-80 transition">Contact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 text-white" style="background: linear-gradient(135deg, #052F35 0%, rgb(21,128,140) 100%);">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Welcome to the Future of Innovation
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90">
+                        Transform your business with cutting-edge solutions designed for success
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="text-white px-8 py-4 rounded-2xl shadow-md hover:opacity-90 transition text-lg font-semibold" style="background-color: rgb(21,128,140);">
+                            <i class="fas fa-play-circle mr-2"></i>Get Started
+                        </button>
+                        <button class="bg-white text-gray-800 px-8 py-4 rounded-2xl shadow-md hover:bg-gray-100 transition text-lg font-semibold">
+                            <i class="fas fa-info-circle mr-2"></i>Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-72 h-72 md:w-96 md:h-96 rounded-full bg-white bg-opacity-10 backdrop-blur-lg flex items-center justify-center">
+                            <i class="fas fa-rocket text-9xl text-white opacity-80"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-green-50 border-2 border-green-200 p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-users text-4xl mb-3" style="color: rgb(21,128,140);"></i>
+                    <h3 class="text-3xl font-bold mb-2">10K+</h3>
+                    <p class="text-gray-600">Active Users</p>
+                </div>
+                <div class="bg-blue-50 border-2 border-blue-200 p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-globe text-4xl mb-3" style="color: rgb(21,128,140);"></i>
+                    <h3 class="text-3xl font-bold mb-2">50+</h3>
+                    <p class="text-gray-600">Countries</p>
+                </div>
+                <div class="bg-yellow-50 border-2 border-yellow-200 p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-star text-4xl mb-3" style="color: rgb(21,128,140);"></i>
+                    <h3 class="text-3xl font-bold mb-2">4.9/5</h3>
+                    <p class="text-gray-600">User Rating</p>
+                </div>
+                <div class="bg-red-50 border-2 border-red-200 p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-award text-4xl mb-3" style="color: rgb(21,128,140);"></i>
+                    <h3 class="text-3xl font-bold mb-2">25+</h3>
+                    <p class="text-gray-600">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: #052F35;">Our Features</h2>
+                <p class="text-xl text-gray-600">Discover what makes us different</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-green-50 border-2 border-green-200 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgb(21,128,140);">
+                        <i class="fas fa-bolt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #052F35;">Lightning Fast</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Experience blazing-fast performance with our optimized infrastructure designed for speed and efficiency.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-blue-50 border-2 border-blue-200 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgb(21,128,140);">
+                        <i class="fas fa-shield-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #052F35;">Secure & Safe</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Your data is protected with enterprise-grade security measures and encryption protocols.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-yellow-50 border-2 border-yellow-200 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgb(21,128,140);">
+                        <i class="fas fa-cogs text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #052F35;">Easy to Use</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Intuitive interface designed for everyone, no technical knowledge required to get started.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-red-50 border-2 border-red-200 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgb(21,128,140);">
+                        <i class="fas fa-mobile-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #052F35;">Mobile Ready</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Fully responsive design that works seamlessly across all devices and screen sizes.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-green-50 border-2 border-green-200 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgb(21,128,140);">
+                        <i class="fas fa-headset text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #052F35;">24/7 Support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our dedicated support team is always here to help you succeed, anytime, anywhere.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-blue-50 border-2 border-blue-200 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgb(21,128,140);">
+                        <i class="fas fa-chart-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #052F35;">Analytics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Gain valuable insights with powerful analytics and reporting tools to track your progress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="bg-gradient-to-br from-green-100 to-blue-100 p-12 rounded-2xl shadow-xl">
+                        <i class="fas fa-lightbulb text-9xl" style="color: rgb(21,128,140);"></i>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #052F35;">About Us</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        We are a team of passionate innovators dedicated to creating solutions that make a difference. Our mission is to empower businesses and individuals with cutting-edge technology that drives success.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        With years of experience and a commitment to excellence, we've helped thousands of clients achieve their goals and transform their vision into reality.
+                    </p>
+                    <button class="text-white px-8 py-3 rounded-2xl shadow-md hover:opacity-90 transition font-semibold" style="background-color: rgb(21,128,140);">
+                        <i class="fas fa-arrow-right mr-2"></i>Read Our Story
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: #052F35;">What People Say</h2>
+                <p class="text-xl text-gray-600">Hear from our satisfied customers</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-yellow-50 border-2 border-yellow-200 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "This platform has completely transformed how we do business. The results have been incredible!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mr-4" style="background-color: rgb(21,128,140);">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Sarah Johnson</p>
+                            <p class="text-sm text-gray-500">CEO, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-red-50 border-2 border-red-200 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "Outstanding support and amazing features. I couldn't ask for more. Highly recommended!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mr-4" style="background-color: rgb(21,128,140);">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Michael Chen</p>
+                            <p class="text-sm text-gray-500">Founder, StartupHub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 border-2 border-green-200 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                        <i class="fas fa-star" style="color: rgb(21,128,140);"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "The best investment we've made. It's intuitive, powerful, and delivers real results."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mr-4" style="background-color: rgb(21,128,140);">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Emily Rodriguez</p>
+                            <p class="text-sm text-gray-500">Director, InnovateLab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 md:py-24 text-white" style="background: linear-gradient(135deg, rgb(21,128,140) 0%, #052F35 100%);">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
+            <p class="text-xl md:text-2xl mb-10 opacity-90">
+                Join thousands of satisfied customers and transform your business today
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <input type="email" placeholder="Enter your email" class="px-6 py-4 rounded-2xl w-full sm:w-96 text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                <button class="text-white px-8 py-4 rounded-2xl shadow-md hover:opacity-90 transition font-semibold w-full sm:w-auto" style="background-color: rgb(21,128,140);">
+                    <i class="fas fa-paper-plane mr-2"></i>Get Started Free
+                </button>
+            </div>
+            <p class="mt-6 text-sm opacity-80">No credit card required. Start your free trial today.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-12" style="background-color: #052F35;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-rocket mr-2"></i>BrandName</h3>
+                    <p class="opacity-80">Transforming businesses with innovative solutions.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Product</h4>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Features</a></li>
+                        <li><a href="#" class="hover:opacity-100">Pricing</a></li>
+                        <li><a href="#" class="hover:opacity-100">Security</a></li>
+                        <li><a href="#" class="hover:opacity-100">Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#" class="hover:opacity-100">About</a></li>
+                        <li><a href="#" class="hover:opacity-100">Blog</a></li>
+                        <li><a href="#" class="hover:opacity-100">Careers</a></li>
+                        <li><a href="#" class="hover:opacity-100">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 pt-8 text-center opacity-80">
+                <p>&copy; 2024 BrandName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                if ($(target).length) {
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top - 80
+                    }, 800);
+                }
+            });
+
+            // Mobile menu toggle
+            $('.md\\:hidden button').on('click', function() {
+                // Add mobile menu logic here if needed
+                alert('Mobile menu clicked - you can add a slide-out menu here!');
+            });
+
+            // Add animation on scroll
+            $(window).on('scroll', function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                    $('nav').addClass('shadow-2xl');
+                } else {
+                    $('nav').removeClass('shadow-2xl');
+                }
+            });
+
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            // Observe all feature cards
+            document.querySelectorAll('section > div > div > div').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease-out';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
